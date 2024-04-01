@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RTK TIMBER Ltd.</title>
+  <link rel="stylesheet" href="css/vars.css">
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/cooperation.css">
+</head>
+<body>
+  <!-- <button class="btn-pop-up">
+    <img src="/images/icons/question.svg" alt="иконка вопроса">
+  </button>
+  <div class="pop-up">
+    <div class="pop-up__inner">
+      <h3 class="pop-up__title">Нужна помощь?</h3>
+      <p class="pop-up__text">Свяжитесь с нами или перейдите в раздел с часто задаваемыми вопросами.</p>
+      <div class="pop-up__links">
+        <a class="pop-up__link pop-up__link-tel" href="tel:+37128059655">
+          <span>
+            <img src="/images/icons/phone.svg" alt="иконка телефона">
+          </span>
+          <span>+371 28059655</span>
+        </a>
+        <a class="pop-up__link pop-up__link-faq" href="faq.html">
+          <span>
+            <img src="/images/icons/question.svg" alt="иконка вопроса">
+          </span>
+          <span>FAQ</span>
+        </a>
+      </div>
+    </div>
+  </div> -->
+  <header class="header d-center-between">
+    <a href="index.html">
+      <img src="images/logo.svg" alt="Логотип RTK TIMBER Ltd." width="102" height="60">
+    </a>
+    <nav class="d-center">
+      <ul class="header__nav-list d-center-between">
+        <li>
+          <a class="header__nav-link" href="">Продукция</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="">Доставка</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="">О нас</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="">Качество</a>
+        </li>
+        <li>
+          <a class="header__nav-link" href="">Контакты</a>
+        </li>
+      </ul>
+      <button  class="header__nav-btn">Начать сотрудничество</button>
+      <div>
+        <select  class="header__nav-select" name="lang" id="select-lang">
+          <option value="RU">RU</option>
+          <option value="EN">EN</option>
+        </select>
+        <div class="header__nav-dropdown">0,00</div>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="main-banner__wrapper section-main bg-white">
+      <div class="main-banner section-main__banner">
+        <h1 class="title-1 main-banner__title section-main__title">Получить индивидуальное предложение</h1>
+      </div>
+    </section>
+    <section class="section-form">
+      <form class="section-form__form form">
+        <h2 class="section-form__title">Информация о заказчике</h2>
+        <p class="section-form__text text-green">Применяемый к заказанному товару НДС зависит от вашего личного статуса.</p>
+        <label class="form__select">
+          <span>Страна</span>
+          <select name="Страна" id="country">
+            <option value="Россия">Россия</option>
+            <option value="Польша">Польша</option>
+          </select>
+        </label>
+        <label class="form__select">
+          <span>Город</span>
+          <select name="Город" id="city">
+            <option value="Москва">Москва</option>
+            <option value="Владивосток">Владивосток</option>
+          </select>
+        </label>
+        <label class="form__radio">
+          <span>Личный статус заказчика</span>
+          <div class="form__radio-list">
+            <label for="radio-1">
+              <input type="radio" name="Личный статус заказчика" id="radio-1" value="Физическое лицо">
+            </label>
+            <label for="radio-2">
+              <input type="radio" name="Личный статус заказчика" id="radio-2" value="Юридическое лицо">
+            </label>
+          </div>
+        </label>
+        <div class="form__status-content">
+          <div class="form__status-private">
+            <label class="form__input form__input-name">
+              <span>Имя</span>
+              <input type="text" name="Имя" placeholder="Введите имя">
+            </label>
+            <label class="form__input form__input-surname">
+              <span>Фамилия</span>
+              <input type="text" name="Фамилия" placeholder="Введите фамилию">
+            </label>
+            <label class="form__input form__input-code">
+              <span>Персональный код</span>
+              <input type="text" name="Персональный код" placeholder="Введите код при наличии">
+            </label>
+            <label class="form__input form__input-phone">
+              <span>Номер телефона</span>
+              <input type="tel" name="Номер телефона" placeholder="Введите номер телефона">
+            </label>
+            <label class="form__input form__input-email">
+              <span>E-mail</span>
+              <input type="email" name="Почта" placeholder="example@mail.com">
+            </label>
+          </div>
+          <div class="form__status-juridical">
+            <label class="form__input form__input-number">
+              <span>Регистрационный номер</span>
+              <input type="text" name="Регистрационный номер" placeholder="Введите номер компании">
+            </label>
+            <label class="form__input form__input-phone">
+              <span>Номер телефона</span>
+              <input type="tel" name="Номер телефона" placeholder="Введите номер телефона">
+            </label>
+            <label class="form__input form__input-email">
+              <span>E-mail</span>
+              <input type="email" name="Почта" placeholder="example@mail.com">
+            </label>
+            <label class="form__input form__input-company">
+              <span>Название компании</span>
+              <input type="text" name="Название компании" placeholder="Введите полное название">
+            </label>
+            <label class="form__input form__input-address">
+              <span>Юридический адрес компании</span>
+              <input type="text" name="Юридический адрес" placeholder="Введите юридический адрес">
+            </label>
+          </div>
+        </div>
+        <h2 class="section-form__title">Информация о доставке</h2>
+        <label class="form__input form__input-street">
+          <span>Улица</span>
+          <div class="form__input-street__inner">
+            <input type="text" name="Адрес доставки" placeholder="Введите адрес">
+            <button>Отметить на карте</button>
+          </div>
+        </label>
+        <label class="form__input form__input-50">
+          <span>Название или номер дома</span>
+          <input type="text">
+        </label>
+        <label class="form__input form__input-50">
+          <span>Номер помещения</span>
+          <input type="text">
+        </label>
+        <label class="form__input form__input-50">
+          <span>Почтовый индекс</span>
+          <input type="text">
+        </label>
+        <h2 class="section-form__title">Информация о заказе</h2>
+        <p class="section-form__text text-green">Опишите, какие товары и в каком объёме необходимы, а также любые пожелания по Вашему заказу</p>
+        <textarea name="Сообщение" placeholder="Мы обязательно учтём все ваши просьбы!"></textarea>
+        <label class="form__checkbox">
+          <input type="checkbox">
+          <span>Я хочу получать новости и информацию об акциях на указанный мной адрес электронной почты</span>
+        </label>
+        <label class="form__checkbox">
+          <input type="checkbox">
+          <span>
+            Я ознакомился (-ась) с условиями 
+            <a href="policy.html" target="_blank">политикой конфиденциальности</a> 
+            и 
+            <a href="policy.html" target="_blank">и согласен (-на) с ними"></a>
+          </span>
+        </label>
+        <div class="form__buttons">
+          <button class="form__button-link">Вернуться на главную</button>
+          <button class="form__button-submit">Отправить запрос</button>
+        </div>
+      </form>
+    </section>
+  </main>
+  <footer class="footer">
+    <div>
+      <h2 class="title-1 footer__title">Выдающееся качество</h2>
+      <p class="footer__text">Компания SIA Baltic Wood Trade сертифицирована ENplus® A1/A2 и в соответствии со стандартами цепочки поставок FSC® и PEFC™
+      </p>
+      <div class="footer__contacts">
+        <div class="footer__contact">
+          <div class="footer__contact-icon">
+            <img src="/images/icons/letter.svg" alt="иконка">
+          </div>
+          <a tel="mailto:dsasdasd@sample.com">dsasdasd@sample.com</a>
+        </div>
+        <div class="footer__contact"> 
+          <div class="footer__contact-icon">
+            <img src="/images/icons/phone-active.svg" alt="иконка">
+          </div>
+          <a href="tel:+0099499009">+0099 49 9 009</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__right-wrapper">
+      <div class="footer__right">
+        <img src="/images/certificate/certificate-4.png" alt="сертификат 4">
+        <img src="/images/certificate/certificate-3.png" alt="сертификат 3">
+        <img src="/images/certificate/certificate-2.png" alt="сертификат 2">
+        <img src="/images/certificate/certificate-1.png" alt="сертификат 1">
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
