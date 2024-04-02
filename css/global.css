@@ -116,12 +116,21 @@ main {
 }
 .pop-up {
   position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+.pop-up--active {
+  display: block;
+}
+.pop-up__inner {
+  position: fixed;
   z-index: 2;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-.pop-up__inner {
   border-radius: 20px;
   text-align: center;
   background-color: var(--bg-green);
@@ -625,12 +634,41 @@ main {
   .burger-btn {
     display: block;
   }
+  .burger-btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    width: 44px;
+    height: 44px;
+    background-color: var(--bg-icons);
+    padding: 10px;
+  }
+  .burger-btn--active .burger-btn__inner {
+    transform: rotate(90deg);
+  }
+  .burger-btn__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in;
+  }
+  .burger-btn span {
+    border-radius: 10px;
+    height: 3px;
+    background-color: var(--green-500);
+  }
   .mobile-menu {
     position: absolute;
-    top: 100px;
+    top: -300%;
     right: 0;
     left: 0;
     background-color: var(--bg);
+    transition: top 0.4s ease-in-out;
+  }
+  .mobile-menu--active {
+    top: 100px;
+    transition: top 0.4s ease-in-out;
   }
   .mobile-menu__inner {
     padding: 32px var(--padding-page);
@@ -687,7 +725,7 @@ main {
     line-height: 24px;
   }
 
-  .mobile-menu {
+  .mobile-menu--active {
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     top: 80px;

@@ -1,3 +1,27 @@
+  const buttonMobileNav = document.querySelector('.burger-btn')
+  const mobileNav = document.querySelector('.mobile-menu')
+
+  function clickHandlerButtonMobileNav () {
+    buttonMobileNav.classList.toggle('burger-btn--active')
+    mobileNav.classList.toggle('mobile-menu--active')
+  }
+
+  buttonMobileNav.addEventListener('click', clickHandlerButtonMobileNav)
+  
+  const buttonSupportPopup = document.querySelector('.btn-pop-up')
+  const supportPopup = document.querySelector('.pop-up')
+
+  function clickHandlerButtonSupportPopup () {
+    supportPopup.classList.toggle('pop-up--active')
+  }
+  function clickHandlerSupportPopup(e) {
+    console.log(e.target)
+    if (e.target === supportPopup) supportPopup.classList.remove('pop-up--active')
+  }
+
+  buttonSupportPopup.addEventListener('click', clickHandlerButtonSupportPopup)
+  supportPopup.addEventListener('click', clickHandlerSupportPopup)
+
   // accordeon
   // для того, чтобы срабатывал клик именно по faq__item в css на внутренних элментах faq__item должен быть pointer-events: none
   const accordeonItems = document.querySelectorAll(`[data-accordeon]`)
