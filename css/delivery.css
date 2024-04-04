@@ -2,7 +2,7 @@
   padding-bottom: 101px;  
 }
 .section-main__banner {
-  background-image: url(/images/banner/banner-city.png);
+  background-image: url(../images/banner/banner-city.png);
   margin-bottom: 50px;
 }
 .section-main__text {
