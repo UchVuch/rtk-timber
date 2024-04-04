@@ -239,7 +239,7 @@ main {
   justify-content: space-between;
   gap: 25px;
   padding: 109px var(--padding-page) 82px;
-  background-image: url(/images/bg.png);
+  background-image: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
