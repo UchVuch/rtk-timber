@@ -2,7 +2,7 @@
   padding-block: 50px 100px;
 }
 .section-main__banner {
-  background-image: url(/images//banner/banner-hands.png);
+  background-image: url(../images//banner/banner-hands.png);
   margin-bottom: 80px;
 }
 .section-main__title {
