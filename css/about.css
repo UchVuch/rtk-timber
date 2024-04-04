@@ -22,6 +22,10 @@
   display: flex;
   justify-content: space-between;
 }
+.section-main__content-images--mobile {
+  display: none;
+  justify-content: space-between;
+}
 .section-main__content-image {
   border-radius: 20px;
   width: 29%;
